@@ -230,7 +230,18 @@
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <h4 class="title"><a href="">ESTADÍGRAFOS</a></h4>
               <p class="description">Medida estadística de resúmenes correspondientes a los datos empíricos de una muestra y que se utiliza con fines descriptivos o analíticos.</p>
-              
+              <p>\(Media\ muestral\ (\bar{x}):\)</p>
+              <p>
+                $$\bar{x} = {1\over n}{\sum_{i=1}^n x_i}$$
+              </p>
+              <p>\(Varianza\ muestral\ ({s}^2):\)</p>
+              <p>
+                $${s}^2 = {1\over {n-1}}{\sum_{i=1}^n {(x_i-\bar{x})}^2}$$
+              </p>
+              <p>\(Desviación\ estandar\ (s):\)</p>
+              <p>
+                $$s = \sqrt{{1\over {n-1}}{\sum_{i=1}^n {(x_i-\bar{x})}^2}}$$
+              </p>
             </div>
           </div>
 
@@ -251,7 +262,9 @@
             <div class="box wow fadeInRight" data-wow-delay="0.2s">
               <h4 class="title"><a href="">MÁS TERMINOS ESTADÍSTICOS</a></h4>
               <p class="description">Existen muchos más terminos estadísticos, Encuentralos a todos.</p>
-              <p> <a href="https://glosarios.servidor-alicante.com/terminos-estadistica" target="_blank"> https://glosarios.servidor-alicante.com/terminos-estadistica </a> </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="http://intranet.comunidadandina.org/Documentos/Reuniones/DTrabajo/SG_REG_DIES_IV_dt%202.pdf" class="btn btn-outline-info me-md-2" target="_blank">Click aquí</a>
+              </div>
             </div>
           </div>
 
@@ -274,8 +287,8 @@
         <div class="section-header1" id="media">
           <h2>MEDIA</h2>
             <ul>
-              <li>Si tenemos una población normal N(μ,σ)> y extraemos de ella muestras de tamaño n, la distribución muestral de medias sigue también una distribución normal.</li> 
-              <li>Si la población no sigue una distribución normal, pero n>30, aplicando el llamado Teorema central del límite la distribución muestral de medias se aproxima también a la normal anterior.</li>
+              <li>Si tenemos una población normal \(N(μ,σ)\) y extraemos de ella muestras de tamaño \(n\), la distribución muestral de medias sigue también una distribución normal.</li> 
+              <li>Si la población no sigue una distribución normal, pero \(n>30\), aplicando el llamado Teorema central del límite la distribución muestral de medias se aproxima también a la normal anterior.</li>
             </ul>
         </div>
         
@@ -283,8 +296,17 @@
 
           <div class="col-lg-6" id="poblacionI">
             <div class="box wow fadeInLeft">
-              <h4 class="title"><a href="">POBLACIÓN INFINIDA</a></h4>
-              <p class="description">Reconocemos que jamás vamos a poder estudiar em su totalidad a toda las posibles personas o muestras que uno podría obtener.</p>
+              <h4 class="title"><a href="">POBLACIÓN INFINITA</a></h4>
+              <p class="description">Reconocemos que jamás vamos a poder estudiar em su totalidad a toda las posibles personas o muestras que uno podría obtener.</p><r>
+              <p>
+                $$μ_\bar{x} = {μ}$$
+              </p>
+              <p>
+                $$σ_\bar{x} = {σ\over \sqrt{N}}$$
+              </p>
+              <p>
+                $$N > 30$$
+              </p>
                 
             </div>
           </div>
@@ -293,20 +315,47 @@
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <h4 class="title"><a href="">POBLACION FINITA</a></h4>
               <p class="description">El número de sujetos o personas que se encuentran en ellas es un número en concreto.</p>
+              <p>
+                $$μ_\bar{x} = {μ}$$
+              </p>
+              <p>
+                $$σ_\bar{x} = {σ\over \sqrt{N}}{\sqrt{\frac{N_p - N}{N_p - 1}}}$$
+              </p>
             </div>
           </div>
 
           <div class="col-lg-6" id="TeoremaLC">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">EL TEOREMA DEL LÍMITE CENTRAL</a></h4>
-              <p class="description">El teorema central del límite es uno de los resultados fundamentales de la estadística. Este teorema nos dice que si una muestra es lo bastante grande (generalmente cuando el tamaño muestral (n) supera los 30), sea cual sea la distribución de la media muestral, seguirá aproximadamente una distribución normal.</p>
+              <h4 class="title">EL TEOREMA DEL LÍMITE CENTRAL</h4>
+              <p class="description">El teorema central del límite es uno de los resultados fundamentales de la estadística. Este teorema nos dice que si una muestra es lo bastante grande (generalmente cuando el tamaño muestral (n) supera los 30), sea cual sea la distribución de la media muestral, seguirá aproximadamente una distribución normal.</p><br>
+              <h4 class="title">
+                PRINCIPALES PROPIEDADES
+              </h4>
+              <ul>
+                <li>
+                  Si el tamaño de la muestra es suficientemente grande, la distribución de las medias muestrales seguirá aproximadamente una distribución normal. si la muestra es superior a \(30\), la media muestral tendrá una función de distribución próxima a una normal. Y esto se cumple independientemente de la forma de la distribución con la que estamos trabajando.
+                </li><br>
+                <li>
+                  La varianza de la distribución de las medias muestrales será \({σ}^2/n\). Que es la varianza de la que es la varianza de la población dividido entre el tamaño de la muestra.
+                </li>
+              </ul>
             </div>
           </div>
 
           <div class="col-lg-6" id="Desigualdad">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <h4 class="title"><a href="">DESIGUALDAD DE CHEBYSHEV</a></h4>
-              <p class="description">La desigualdad de Chebyshev es un teorema utilizado en estadística que proporciona una estimación conservadora (intervalo de confianza) de la probabilidad de que una variable aleatoria con varianza finita se sitúe a una cierta distancia de su esperanza matemática o de su media.</p>
+              <p class="description">La desigualdad de Chebyshev es un teorema utilizado en estadística que proporciona una estimación conservadora (intervalo de confianza) de la probabilidad de que una variable aleatoria con varianza finita se sitúe a una cierta distancia de su esperanza matemática o de su media.</p><br>
+              <p>La expresión formal es la siguiente:</p><br>
+              <p>
+                $$ P(|X - μ|k6) \leq \frac{1}{k^2} $$
+              </p>
+              <p>
+                \(X = Valor\ estimado\)
+              </p>
+              <p>
+                \(μ = Esperanza\ matenática\ del\ valor\ estimado\)
+              </p>
             </div>
           </div>
 

@@ -223,6 +223,7 @@
               <p>
                 $$σ = \sqrt{{1\over N}{\sum_{i=1}^N {(X_i-\bar{X})}^2}}$$
               </p>
+              <p>\(Proporción\ poblacional\ (P):\)</p>
             </div>
           </div>
   
@@ -232,7 +233,7 @@
               <p class="description">Medida estadística de resúmenes correspondientes a los datos empíricos de una muestra y que se utiliza con fines descriptivos o analíticos.</p>
               <p>\(Media\ muestral\ (\bar{x}):\)</p>
               <p>
-                $$\bar{x} = {1\over n}{\sum_{i=1}^n x_i}$$
+                $$x = {1\over n}{\sum_{i=1}^n x_i}$$
               </p>
               <p>\(Varianza\ muestral\ ({s}^2):\)</p>
               <p>
@@ -242,6 +243,7 @@
               <p>
                 $$s = \sqrt{{1\over {n-1}}{\sum_{i=1}^n {(x_i-\bar{x})}^2}}$$
               </p>
+              <p>\(Proporción\ muestral\ (p):\)</p>
             </div>
           </div>
 
@@ -284,94 +286,180 @@
           <p>Es lo que resulta de considerar todas las muestras posibles que pueden ser tomadas de una población. Su estudio permite calcular la probabilidad que se tiene, dada una sola muestra, de acercarse al parámetro de la población.</p>
         </div>
 
-        <div class="section-header1" id="media">
-          <h2>MEDIA</h2>
-            <ul>
-              <li>Si tenemos una población normal \(N(μ,σ)\) y extraemos de ella muestras de tamaño \(n\), la distribución muestral de medias sigue también una distribución normal.</li> 
-              <li>Si la población no sigue una distribución normal, pero \(n>30\), aplicando el llamado Teorema central del límite la distribución muestral de medias se aproxima también a la normal anterior.</li>
-            </ul>
+
+        <!--==========================
+          Distribución de la media
+        ============================-->
+        <h2><a data-toggle="collapse" href="#media" aria-expanded="false">DE LA MEDIA</a></h2>
+        <div class="section-header1 collapse" id="media">
+          <p>Sea \(X_1, X_2, ... , X_n\) una muestra aleatoria de tamaño \(n\) entonces llamamos media muestral o promedio muestral a la expersión:</p>
+          <p>
+            $$\bar{X} = {1\over n}{\sum_{i=1}^n x_i}$$
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6" id="poblacionI">
+              <div class="box wow fadeInLeft">
+                <h4 class="title">Teorema 1.1 <br> <br> POBLACIÓN INFINITA</h4>
+                <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra de una población infinita con media \(μ\) y varianza \(σ^2\), entonces: </p><r>
+                <p>
+                  $$a) E(\bar{x}) = {μ}$$
+                </p>
+                <p>
+                  $$b) V(\bar{x}) = {σ^2\over n}$$
+                </p>
+                
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+  
+                <h4 class="title">Teorema 1.2 <br> <br> POBLACION FINITA</h4>
+                <p class="description"> Si la población es finita de tamaño \(N\), entonces: </p>
+                <p>
+                  $${σ^2}_\bar{x} = {σ^2\over n}({\frac{N - n}{N - 1}})$$
+                </p>
+  
+              </div>
+            </div>
+  
+            <div class="col-lg-6" id="pobl">
+              <div class="box wow fadeInLeft">
+                <h4 class="title">Teorema 2</h4>
+                <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra de tamaño \(n\) de una población que se distribuye Normal con media \(μ\) y varianza \(σ^2\), entonces: </p>
+                <p>
+                  $$\bar{X} = {1\over n}{\sum_{i=1}^n x_i}$$ $$N(μ, \frac{σ^2}{n})$$
+                </p>
+                <p class="description">
+                  Si \(X = N(μ, σ)\), 
+                </p>
+                <p>
+                  $$\bar{X} = N(μ, \frac{σ}{\sqrt{n}}) \Leftrightarrow \frac{\bar{X} - μ}{σ/\sqrt{n}} = N(0,1)$$
+                </p> 
+                <p class="description">
+                  Aunque la variable no sea normal, lo anterior también se cumple si \(n\) es grande \((n>30)\)
+                </p><br>
+                <p class="description">
+                  Si la población es normal, pero \(σ\) es desconocida,
+                  $$\frac{\bar{X} - μ}{s/\sqrt{n}} = t_{n-1}$$
+                </p>               
+              </div>
+            </div>
+  
+            <div class="col-lg-6" id="pobl">
+              <div class="box wow fadeInLeft">
+                <h4 class="title">Teorema 3</h4>
+                <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra aleatoria de tamaño \(n\) de una población que se distribuye Normal con media \(μ\) y varianza \(σ^2\), entonces: </p>
+  
+                <p>
+                  $$\frac{\bar{X} - μ}{σ/\sqrt{n}} = N(0, 1)$$
+                </p> 
+                
+              </div>
+            </div>
+  
+            <div class="col-lg-6" id="TeoremaLC">
+              <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                <h4 class="title">Teorema 4 <br> TEOREMA CENTRAL DEL LÍMITE</h4>
+                <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra aleatoria de tamaño \(n\) de una población infinita que se distribuye con media \(μ\) y varianza \(σ^2\), entonces la distribución limite de la variable aleatoria \(Z\) definida por: </p><br>
+                <p>
+                  $$Z = \frac{\sum{(X_i - n)μ}}{σ/\sqrt{n}} = \frac{\bar{X} - μ}{\frac{σ}{\sqrt{n}}}$$
+                </p>
+                <p class="description">Es la distribución normal estándar, cuando \(n\) tiende a infinito</p>
+                <p>
+                  $$n \rightarrow \infty$$
+                  $$Z \sim N(0, 1)$$
+                </p>
+              </div>
+            </div>
+  
+  
+          </div>
+  
         </div>
         
-        <div class="row">
-
-          <div class="col-lg-6" id="poblacionI">
-            <div class="box wow fadeInLeft">
-              <h4 class="title"><a href="">POBLACIÓN INFINITA</a></h4>
-              <p class="description">Reconocemos que jamás vamos a poder estudiar em su totalidad a toda las posibles personas o muestras que uno podría obtener.</p><r>
-              <p>
-                $$μ_\bar{x} = {μ}$$
-              </p>
-              <p>
-                $$σ_\bar{x} = {σ\over \sqrt{N}}$$
-              </p>
-              <p>
-                $$N > 30$$
-              </p>
-                
-            </div>
-          </div>
-
-          <div class="col-lg-6" id="poblacionF">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">POBLACION FINITA</a></h4>
-              <p class="description">El número de sujetos o personas que se encuentran en ellas es un número en concreto.</p>
-              <p>
-                $$μ_\bar{x} = {μ}$$
-              </p>
-              <p>
-                $$σ_\bar{x} = {σ\over \sqrt{N}}{\sqrt{\frac{N_p - N}{N_p - 1}}}$$
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" id="TeoremaLC">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title">EL TEOREMA DEL LÍMITE CENTRAL</h4>
-              <p class="description">El teorema central del límite es uno de los resultados fundamentales de la estadística. Este teorema nos dice que si una muestra es lo bastante grande (generalmente cuando el tamaño muestral (n) supera los 30), sea cual sea la distribución de la media muestral, seguirá aproximadamente una distribución normal.</p><br>
-              <h4 class="title">
-                PRINCIPALES PROPIEDADES
-              </h4>
-              <ul>
-                <li>
-                  Si el tamaño de la muestra es suficientemente grande, la distribución de las medias muestrales seguirá aproximadamente una distribución normal. si la muestra es superior a \(30\), la media muestral tendrá una función de distribución próxima a una normal. Y esto se cumple independientemente de la forma de la distribución con la que estamos trabajando.
-                </li><br>
-                <li>
-                  La varianza de la distribución de las medias muestrales será \({σ}^2/n\). Que es la varianza de la que es la varianza de la población dividido entre el tamaño de la muestra.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-6" id="Desigualdad">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">DESIGUALDAD DE CHEBYSHEV</a></h4>
-              <p class="description">La desigualdad de Chebyshev es un teorema utilizado en estadística que proporciona una estimación conservadora (intervalo de confianza) de la probabilidad de que una variable aleatoria con varianza finita se sitúe a una cierta distancia de su esperanza matemática o de su media.</p><br>
-              <p>La expresión formal es la siguiente:</p><br>
-              <p>
-                $$ P(|X - μ|k6) \leq \frac{1}{k^2} $$
-              </p>
-              <p>
-                \(X = Valor\ estimado\)
-              </p>
-              <p>
-                \(μ = Esperanza\ matenática\ del\ valor\ estimado\)
-              </p>
-            </div>
-          </div>
-
-
-        </div>
-
-        <div class="section-header1" id="proporciones">
-          <h2>PROPORCIONES</h2>
+        <!--==========================
+          Distribución de la varianza
+        ============================-->
+        <h2><a data-toggle="collapse" href="#varianza" aria-expanded="false">DE LA VARIANZA</a></h2>
+        <div class="section-header1 collapse" id="varianza">
+          <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra de tamaño \(n\) de una población con media \(μ\) y varianza \(σ^2\), entonces la varianza muestral es: </p>
           <p>
-            Cuando en una población procedemos a estudiar una característica con sólo dos posibles valores (éxito/fracaso), entonces la población sigue una distribución binomial.
-            <br>
-            Cada muestra de la población tiene un porcentaje de individuos que tiene esta característica. p es la proporción de éxito de esta variable aleatoria de la población. La proporción de fracaso es q = 1 – p. Sean todas las muestras de tamaño n de la población.
-            <br>
-            Para poblaciones grandes, la binomial se aproxima a la normal, la distribución muestral de proporciones también sigue una distribución normal:
-          </p> 
+            $$ s^2 = \frac{\sum{(x_i - \bar{x})^2}}{n-1}$$
+          </p>
+
+          <div class="row">
+            <div class="col-lg-6" id="Teorema1-varianza">
+              <div class="box wow fadeInLeft">
+                <h4 class="title">Teorema 5</h4>
+                <p class="description">Si \(s^2\) es la varianza muestral, entonces: </p><r>
+                <p>
+                  $$a) E(s^2) = σ^2;\ si\ la\ población\ es\ infinita.$$
+                </p>
+                <p>
+                  $$b) E(s^2) = {\frac{N}{N-1}}{σ^2};$$
+                  
+                  $$\ si\ la\ población\ es\ finita\ de\ tamaño\ N.$$
+                </p>
+  
+              </div>
+            </div>
+
+            <div class="col-lg-6" id="Teorema2-varianza">
+              <div class="box wow fadeInLeft">
+                <h4 class="title">Teorema 6</h4>
+                <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra de tamaño \(n\) de una población con media \(μ\) y varianza \(σ^2\), entonces: </p><r>
+                <p>
+                  $$Y = \frac{\sum{(x_i - \bar{x})^2}}{σ^2} = \frac{(n-1)s^2}{σ^2} \sim {x^2}_{n-1}$$
+                </p>
+                <p class="description">
+                  a) Las variables aleatorias \(\bar{x}\) y \(s^2\) son independientes.
+                </p><br>
+                <p class="description">
+                  b) \({\frac{\bar{X} - μ}{s/\sqrt{n}}} \sim t-student_{(n-1)}\), varianza poblacional desconocida.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!--============================
+          Distribución de la proporción
+        ==============================-->
+        <h2><a data-toggle="collapse" href="#proporcion" aria-expanded="false">DE LA PROPORCION</a></h2>
+        <div class="section-header1 collapse" id="proporcion">
+          <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra de tamaño \(n (grande)\) de una población con distribución Bermoulli, entonces llamamos proporción muestral a la expresión: </p>
+          <p>
+            $$ \hat{p} = \bar{X} = \frac{\sum{y_i}}{n}$$
+            $$y_i = 1\ si\ es\ un\ éxito.$$
+            $$y_i = 0\ si\ es\ un\ fracaso. $$
+          </p>
+          <p class="description">Los parámetros de una población Bermoulli son: </p>
+          <p>
+            $$ \mu = p$$
+            $$ {\sigma}^2 = p(1-p)$$
+          </p>
+
+          <p class="description">
+            Entonces por <strong>Teorema 1.1: </strong>
+          </p>
+          <p>
+            $$E(\bar{X}) = E(p) = \mu = p$$
+            $$V(\bar{X}) = E(\hat{p}) = \frac{{\sigma}^2}{n} = \frac{p(1-p)}{n}$$
+          </p>
+          <p class="description">
+            Y por <strong>Teorema 4: </strong>
+          </p>
+          <p>
+            Si \(n \longrightarrow \infty\), entonces: 
+            $$V(\hat{p} \sim  \frac{{\sigma}^2}{n} = \frac{p(1-p)}{n}$$
+          </p>
+        </div>
+
+        <!--===================================================
+          Distribución de la diferencia de media
+        ======================================================-->
 
         <div class="section-header1" id="diferenciaM">
           <h2>DIFERENCIA DE MEDIAS</h2>

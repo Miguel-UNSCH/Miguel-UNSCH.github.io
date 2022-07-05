@@ -85,32 +85,22 @@
 
           <li class="menu-has-children"><a href="#about">Terminos Estadisticos</a>
             <ul>
-              <li><a href="#terminos">Parámetros</a></li>
-              <li><a href="#terminos">Estadigrafos</a></li>
-              <li><a href="#terminos">Estadisticos</a></li>
+              <li><a href="#parametros">Parámetros</a></li>
+              <li><a href="#estadigrafos">Estadigrafos</a></li>
+              <li><a href="#estadisticos">Estadisticos</a></li>
             </ul>
           </li>
           
           <li class="menu-has-children"><a href="#services">Distribuciones Muestrales</a>
             <ul>
               
-              <li class="menu-has-children"><a href="#services">Media</a>
-                <ul>
-                  <li><a href="#services">Población Infinita</a></li>
-                  <li><a href="#poblacionI">Población finita</a></li>
-                  <li><a href="#TeoremaLC">El teorema del límite central</a></li>
-                  <li><a href="#Desigualdad">Desigualdad de Chebyshev</a></li>
-                </ul>
+              <li><a href="#services">Media</a>
               </li>
-              <li><a href="#poblacionF">Proporciones</a></li>
-              <li><a href="#proporciones">Diferencia de Medias</a>
-              <li class="menu-has-children"><a href="#diferenciaM">Diferencia de Proporciones</a>
-                <ul>
-                  <li><a href="#diferenciaP">Distribución de la varianza Muestral</a></li>
-                  <li><a href="#distribucionVM">Distribución de la razón de dos variables muestrales</a></li>
-                </ul>
-              </li>
-
+              <li><a href="#services">Varianza</a></li>
+              <li><a href="#services">Proporción</a></li>
+              <li><a href="#services">Diferencia de Medias</a></li>
+              <li><a href="#services">Razón de 2 varianzas</a></li>
+              <li><a href="#services">Diferencia de proporciones</a></li>
             </ul>
           </li>
 
@@ -125,14 +115,12 @@
                   <li><a href="#Dmedia">Proporción de la población</a></li>
                 </ul>
               </li>
-              <li><a href="#desviacion">Por intervalos</a></li>
+              <li><a href="#intevalo">Por intervalos</a></li>
             </ul>
           </li>
 
-
+          <li><a href="#call-to-action">Ejercicios</a></li>
           <li><a href="#team">Equipo</a></li>
-
-          <li><a href="#contact">Contactos</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -157,7 +145,7 @@
       </h2>
       <div>
         <a href="#about" class="btn-get-started scrollto">TÉRMINOS ESTADISTICOS</a>
-        <a href="#" class="btn-projects scrollto">DISTRIBUCIONES MUESTRALES</a>
+        <a href="#services" class="btn-projects scrollto">DISTRIBUCIONES MUESTRALES</a>
       </div>
     </div>
 
@@ -174,7 +162,7 @@
   <main id="main">
 
     <!--==========================
-      About Section
+      terminos estadisticos
     ============================-->
     <section id="about" class="wow fadeInUp">
       <div class="container">
@@ -207,7 +195,7 @@
       <div class="container">
         <div class="row" >
           
-          <div class="col-lg-6">
+          <div class="col-lg-6" id="parametros">
               <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <h4 class="title"><a href="">PARÁMETROS</a></h4>
               <p class="description">Son medidas descriptivas de una población completa que se pueden utilizar como las entradas para que una función de distribución de probabilidad.</p>
@@ -227,7 +215,7 @@
             </div>
           </div>
   
-          <div class="col-lg-6">
+          <div class="col-lg-6" id="estadigrafos">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <h4 class="title"><a href="">ESTADÍGRAFOS</a></h4>
               <p class="description">Medida estadística de resúmenes correspondientes a los datos empíricos de una muestra y que se utiliza con fines descriptivos o analíticos.</p>
@@ -247,7 +235,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6" id="estadisticos">
             <div class="box wow fadeInLeft" data-wow-delay="0.2s">
               <h4 class="title"><a href="">ESTADÍSTICOS</a></h4>
               <p class="description">
@@ -277,7 +265,7 @@
     
 
     <!--==========================
-      Services Section
+      distribuciones muestrales
     ============================-->
     <section id="services">
       <div class="container">
@@ -290,7 +278,7 @@
         <!--==========================
           Distribución de la media
         ============================-->
-        <h2><a data-toggle="collapse" href="#media" aria-expanded="false">DE LA MEDIA</a></h2>
+        <h3><a data-toggle="collapse" href="#media" aria-expanded="false">Media ▼</a></h3>
         <div class="section-header1 collapse" id="media">
           <p>Sea \(X_1, X_2, ... , X_n\) una muestra aleatoria de tamaño \(n\) entonces llamamos media muestral o promedio muestral a la expersión:</p>
           <p>
@@ -382,7 +370,7 @@
         <!--==========================
           Distribución de la varianza
         ============================-->
-        <h2><a data-toggle="collapse" href="#varianza" aria-expanded="false">DE LA VARIANZA</a></h2>
+        <h3><a data-toggle="collapse" href="#varianza" aria-expanded="false">Varianza ▼</a></h3>
         <div class="section-header1 collapse" id="varianza">
           <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra de tamaño \(n\) de una población con media \(μ\) y varianza \(σ^2\), entonces la varianza muestral es: </p>
           <p>
@@ -427,7 +415,7 @@
         <!--============================
           Distribución de la proporción
         ==============================-->
-        <h2><a data-toggle="collapse" href="#proporcion" aria-expanded="false">DE LA PROPORCION</a></h2>
+        <h3><a data-toggle="collapse" href="#proporcion" aria-expanded="false">Proporción ▼</a></h3>
         <div class="section-header1 collapse" id="proporcion">
           <p class="description">Sea \(X_1, X_2, ... , X_n\) una muestra de tamaño \(n (grande)\) de una población con distribución Bermoulli, entonces llamamos proporción muestral a la expresión: </p>
           <p>
@@ -685,7 +673,7 @@
     </section><!-- #ejercicios -->
 
     <!--==========================
-      Nosotros
+      Equipo
     ============================-->
     <section id="team" class="wow fadeInUp">
       <div class="container">
@@ -698,7 +686,7 @@
               <div class="pic"><img src="img/miguel.jpg" alt=""></div>
               <div class="details">
                 <h4>Miguel Ramirez</h4>
-                <span>estudiante</span>
+                <span>Estudiante (Delegado)</span>
                 <div class="social">
                   <a href="https://www.facebook.com/people/Miguel-Rg/100004652145172/"><i class="fa fa-facebook"></i></a>
                   <a href="https://wa.me/+51925088012"><i class="fa fa-whatsapp"></i></a>
@@ -714,7 +702,7 @@
               <div class="pic"><img src="img/aldahir.jpg" alt=""></div>
               <div class="details">
                 <h4>Aldahir Ubilluz</h4>
-                <span>estudiante</span>
+                <span>Estudiante</span>
                 <div class="social">
                   <a href="https://www.facebook.com/aldknd.ubilluz"><i class="fa fa-facebook"></i></a>
                   <a href="https://wa.me/+51929182306"><i class="fa fa-whatsapp"></i></a>
@@ -730,7 +718,7 @@
               <div class="pic"><img src="img/josue.jpg" alt=""></div>
               <div class="details">
                 <h4>Josue vasquez</h4>
-                <span>estudiante</span>
+                <span>Estudiante</span>
                 <div class="social">
                   <a href="https://www.facebook.com/profile.php?id=100011164812045"><i class="fa fa-facebook"></i></a>
                   <a href="https://wa.me/+51945812943"><i class="fa fa-whatsapp"></i></a>
@@ -746,7 +734,7 @@
               <div class="pic"><img src="img/yuan.jpg" alt=""></div>
               <div class="details">
                 <h4>Yuan Retamozo</h4>
-                <span>estudiante</span>
+                <span>Estudiante</span>
                 <div class="social">
                   <a href="https://www.facebook.com/yuan.retamozovilca"><i class="fa fa-facebook"></i></a>
                   <a href="https://wa.me/+51970855429"><i class="fa fa-whatsapp"></i></a>
@@ -762,7 +750,7 @@
               <div class="pic"><img src="img/franz.jpg" alt=""></div>
               <div class="details">
                 <h4>Franz Morote</h4>
-                <span>estudiante</span>
+                <span>Estudiante</span>
                 <div class="social">
                   <a href="https://www.facebook.com/danilo.morote"><i class="fa fa-facebook"></i></a>
                   <a href="https://wa.me/+51947044316"><i class="fa fa-whatsapp"></i></a>

@@ -670,6 +670,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 20px;
 }
 
+#services h3{
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 #services .box {
   padding: 40px;
   margin-bottom: 40px;
@@ -1014,6 +1020,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #call-to-action .ejercicio .respuesta p{
   color: rgb(73, 86, 156);
   margin-left: 20px;
+}
+
+@media (max-width: 536px){
+  #call-to-action .ejercicio{
+    font-size: 11px;
+  }
 }
 
 /* Our Team Section

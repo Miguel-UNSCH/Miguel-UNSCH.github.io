@@ -1028,6 +1028,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media (max-width: 394px){
+  #call-to-action .ejercicio{
+    font-size: 8px;
+  }
+}
 /* Our Team Section
 --------------------------------*/
 #team {

@@ -747,6 +747,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+@media (max-width: 510px){
+  .formula p{
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 438px){
+  .formula p{
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width: 355px){
+  .formula p{
+    font-size: 9px !important;
+  }
+}
 /* Estimadores Section
 --------------------------------*/
 #estimadores h2{

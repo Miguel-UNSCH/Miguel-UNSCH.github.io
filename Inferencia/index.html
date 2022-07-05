@@ -446,38 +446,30 @@
         </div>
 
         <!--===================================================
-          Distribución de la diferencia de media
+          Distribución de la diferencia de medias
         ======================================================-->
-
-        <div class="section-header1" id="diferenciaM">
-          <h2>DIFERENCIA DE MEDIAS</h2>
+        <h3><a data-toggle="collapse" href="#diferenciaM" aria-expanded="false">Diferencia de medias ▼</a></h3>
+        <div class="section-header1 collapse" id="diferenciaM">
           <p>
             Podemos utilizar la media, la desviación estándar y la forma normal para calcular la probabilidad en una distribución muestral de la diferencia en medias muestrales.
           </p>
         </div>
 
-
-        <div class="section-header1" id="diferenciaP">
-          <h2>DIFERENCIA DE PROPORCIONES</h2>
+        <!--===================================================
+          Distribución de la razon de varianzas
+        ======================================================-->
+        <h3><a data-toggle="collapse" href="#razonV" aria-expanded="false">Razón de 2 varianzas ▼</a></h3>
+        <div class="section-header1 collapse" id="razonV">
           <p>Ahora consideramos la hipótesis nula de que la proporción p1, que mide la proporción de una característica A en una población, es igual a p2, que es la proporción de la misma característica en otra población.</p>
         </div>
-          
-        <div class="row">
+        
 
-          <div class="col-lg-15" id="distribucionVM">
-            <div class="box wow fadeInLeft">
-              <h4 class="title"><a href="">DISTRIBUCIÓN DE LA VARIANZA MUESTRAL</a></h4>
-              <p class="description">Son medidas descriptivas de una población completa que se pueden utilizar como las entradas para que una función de distribución de probabilidad.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-15" id="distribucionRDVM">
-            <div class="box wow fadeInLeft">
-              <h4 class="title"><a href="">DISTRIBUCION DE LA RAZON DE DOS VARIABLES MUESTRALES</a></h4>
-              <p class="description">Son medidas descriptivas de una población completa que se pueden utilizar como las entradas para que una función de distribución de probabilidad.</p>
-            </div>
-          </div>
-
+        <!--===================================================
+          Distribución de la diferencia de proporciones
+        ======================================================-->
+        <h3><a data-toggle="collapse" href="#diferenciaP" aria-expanded="false">Diferencia de proporciones ▼</a></h3>
+        <div class="section-header1 collapse" id="diferenciaP">
+          <p>Ahora consideramos la hipótesis nula de que la proporción p1, que mide la proporción de una característica A en una población, es igual a p2, que es la proporción de la misma característica en otra población.</p>
         </div>
 
 
@@ -496,58 +488,66 @@
           <h2>ESTIMACIÓN</h2>
           <p>Se llama estimación al conjunto de técnicas que permiten dar un valor aproximado de un parámetro de una población a partir de los datos proporcionados por una muestra.</p>
         </div>
-  
-        <div class="section-header1" id="puntual">
-          <h2>PUNTUAL</h2>
+
+        <!--==========================
+          Estimador puntual
+        ============================-->
+        <h3><a data-toggle="collapse" href="#puntual" aria-expanded="false">Puntual ▼</a></h3>
+
+        <div class="section-header1 collapse" id="puntual">
+          
             <p>Una estimación puntual de un parámetro poblacional es cuando se utiliza un único valor para estimar ese parámetro, es decir, se usa un punto en concreto de la muestra para estimar el valor deseado.</p>  
             <ul>
               <li>Insesgadez: Un estimador es insesgado cuando la esperanza matemática del este es igual al parámetro que se desea estimar. Por tanto, la diferencia entre el parámetro a estimar y la esperanza de nuestro estimador tendría que ser 0.</li> 
               <li>Eficiente: Un estimador es más eficiente o tiene la capacidad de estimar de forma precisa cuando su varianza es reducida. Por lo tanto, ante 2 estimadores, siempre elegiremos el que tenga una varianza menor.</li>
               <li>Consistencia: Un estimador consistente es aquel que a medida que la medida que la muestra crece se aproxima cada vez más al valor real del parámetro. Por lo tanto, cuantos más y valores entran en la muestra, el parámetro estimado será más preciso.</li>
             </ul>
-          </div>
+            <div class="row">
 
-        <div class="row">
-
-          <div class="col-lg-6" id="Dmedia">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">MEDIA POBLACIONAL</a></h4>
-              <p class="description">Es un procedimiento de la estadística inferencial mediante el cual se realizan cálculos con los datos de una muestra cuyo resultado es un valor numérico único, empleado para estimar el valor de un parámetro poblacional:</p>
-              <ul>
-                <li>Estimación.</li>
-                <li>Estimación puntual.</li>
-                <li>Estimación por intervalos.</li>
-              </ul>
-            
+              <div class="col-lg-6" id="Dmedia">
+                <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                  <h4 class="title"><a href="">MEDIA POBLACIONAL</a></h4>
+                  <p class="description">Es un procedimiento de la estadística inferencial mediante el cual se realizan cálculos con los datos de una muestra cuyo resultado es un valor numérico único, empleado para estimar el valor de un parámetro poblacional:</p>
+                  <ul>
+                    <li>Estimación.</li>
+                    <li>Estimación puntual.</li>
+                    <li>Estimación por intervalos.</li>
+                  </ul>
+                
+                </div>
+              </div>
+    
+              <div class="col-lg-6">
+                <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                  <h4 class="title"><a href="">VARIANZA</a></h4>
+                  <p class="description">Es una medida de dispersión que representa la variabilidad de una serie de datos respecto a su media. Formalmente se calcula como la suma de los residuos al cuadrado divididos entre el total de observaciones.</p>
+                </div>
+              </div>
+    
+              <div class="col-lg-6" id="desviacion">
+                <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                  <h4 class="title"><a href="">DESVIACIÓN ESTANDAR</a></h4>
+                  <p class="description">se define como la raíz cuadrada de la varianza de una población o de una variable aleatoria que la representa. Tiene una gran importancia en la inferencia clásica, sobre todo en relación con el estudio de la distribución normal como uno de los parámetros que determinan la distribución además de la media poblacional, también llamada “desviación típica poblacional”, se denota usualmente como ߪ y su expresión, en el caso de una población finita de tamaño N, es la siguiente.
+                  </p>
+                </div>
+              </div>
+    
+              <div class="col-lg-6">
+                <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                  <h4 class="title"><a href="">PROPORCION DE LA POBLACIÓN</a></h4>
+                  <p class="description">Un estimador es un valor que puede calcularse a partir de los datos muestrales y que proporciona información sobre el valor del parámetro. Por ejemplo, la media muestral es un estimador de la media poblacional, la proporción observada en la muestra es un estimador de la proporción en la población.</p>
+                </div>
+              </div>
+    
             </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">VARIANZA</a></h4>
-              <p class="description">Es una medida de dispersión que representa la variabilidad de una serie de datos respecto a su media. Formalmente se calcula como la suma de los residuos al cuadrado divididos entre el total de observaciones.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" id="desviacion">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">DESVIACIÓN ESTANDAR</a></h4>
-              <p class="description">se define como la raíz cuadrada de la varianza de una población o de una variable aleatoria que la representa. Tiene una gran importancia en la inferencia clásica, sobre todo en relación con el estudio de la distribución normal como uno de los parámetros que determinan la distribución además de la media poblacional, también llamada “desviación típica poblacional”, se denota usualmente como ߪ y su expresión, en el caso de una población finita de tamaño N, es la siguiente.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <h4 class="title"><a href="">PROPORCION DE LA POBLACIÓN</a></h4>
-              <p class="description">Un estimador es un valor que puede calcularse a partir de los datos muestrales y que proporciona información sobre el valor del parámetro. Por ejemplo, la media muestral es un estimador de la media poblacional, la proporción observada en la muestra es un estimador de la proporción en la población.</p>
-            </div>
-          </div>
-
         </div>
 
-        <div class="section-header1" id="intervalo">
-          <h2>POR INTERVALOS</h2>
+        <!--==========================
+          Estimador por intervalos
+        ============================-->
+        <h3><a data-toggle="collapse" href="#intervalo" aria-expanded="false">Por intervalos ▼</a></h3>
+
+        <div class="section-header1 collapse" id="intervalo">
           <p>
           La estimación por intervalos consiste en establecer el intervalo de valores donde es más probable se encuentre el parámetro. 
           <br>

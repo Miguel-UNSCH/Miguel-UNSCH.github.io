@@ -664,7 +664,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services h2{
   text-align: justify;
   font-size: 24px;
-  color: #0c2e8a !important;
   font-weight: 700;
   position: relative;
   padding-bottom: 20px;
@@ -747,6 +746,24 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
   }
 }
+
+/* Estimadores Section
+--------------------------------*/
+#estimadores h2{
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+#estimadores h3{
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #51D8AF;
+}
+
 
 /* Clients Section
 --------------------------------*/

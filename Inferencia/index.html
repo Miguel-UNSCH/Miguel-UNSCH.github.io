@@ -558,6 +558,36 @@
           <p>
             $$\frac{(n_y-1){S_y}^2}{{\sigma_y}^2}\ \sim \ X^2(n_y-1)gl$$
           </p>
+          <div class="row">
+            <div class="col-lg-6" id="">
+              <div class="box wow fadeInLeft">
+                <h4 class="title">Caso 1</h4>
+                <p class="description">Si las poblaciones son heterocedásticas osea \({\sigma_x}^2 \neq {\sigma_y}^2\): </p><r>
+                <div class="formula">
+                  <p>
+                    $$F=\frac{\frac{\frac{\left(n_x-1\right){S_x}^2}{{\sigma_x}^2}}{\left(n_x-1\right)}}{\frac{\frac{\left(n_y-1\right){S_y}^2}{{\sigma_y}^2}}{\left(n_y-1\right)}}=\frac{\frac{{S_x}^2}{{\sigma_x}^2}}{\frac{{S_y}^2}{{\sigma_y}^2}}$$
+                  </p>
+                  <p>
+                    $$F=\frac{{S_x}^2{\sigma_y}^2}{{S_y}^2{\sigma_x}^2}$$
+                    $$\sim F(n_x-1;n_y-1)$$
+                  </p>
+                </div>
+  
+              </div>
+            </div>
+
+            <div class="col-lg-6" id="Teorema2-varianza">
+              <div class="box wow fadeInLeft">
+                <h4 class="title">Caso 2.</h4>
+                <p class="description">Si las poblaciones son heterocedásticas osea \({\sigma_x}^2 = {\sigma_y}^2\): </p><r>
+                <p>
+                  $$F=\frac{{S_x}^2}{{S_y}^2}$$
+                  $$\sim F(n_x-1;n_y-1)$$
+                </p>
+                
+              </div>
+            </div>
+          </div>
         </div>
         
 
@@ -566,7 +596,20 @@
         ======================================================-->
         <h3><a data-toggle="collapse" href="#diferenciaP" aria-expanded="false">Diferencia de proporciones ▼</a></h3>
         <div class="section-header1 collapse" id="diferenciaP">
-          <p>Ahora consideramos la hipótesis nula de que la proporción p1, que mide la proporción de una característica A en una población, es igual a p2, que es la proporción de la misma característica en otra población.</p>
+          <p class="description">Para calcular la probalidad del comportamiento de la diferencia de proporciones en la muestra, utilizaremos la siguiente fórmula para estandarizar:</p>
+          <p>
+            Sean \(X, Y\) dos poblaciones diferentes con proporciones \(p_x\) y \(p_y\) respectivamente, entonces:
+          </p>
+          <p>
+            $$Z=\frac{\left({\hat{p}}_x-{\hat{p}}_y\right)-\left(p_x-p_y\right)}{\sqrt{\frac{p_xq_x}{n_x}+\frac{p_yq_y}{n_y}}}$$
+          </p>
+          
+          <p>
+            Donde: \(q_x = 1 - p_x\)
+          </p>
+          <p>
+            y  \(q_y = 1 - p_y\)
+          </p>
         </div>
 
 

@@ -1,0 +1,38 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #1C273A;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    position: relative;
+}
+
+.loading span
+{
+    position: relative;
+    top: 8rem;
+
+    color: white;
+    font-size: 1.2rem;
+}
+

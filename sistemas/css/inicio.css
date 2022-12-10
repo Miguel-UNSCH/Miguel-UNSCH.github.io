@@ -34,14 +34,13 @@ body
 
 .barra-lateral
 {
-    position: relative;
-
     background-color: var(--bg-color-barra-lateral);
     width: 20rem;
     height: 100vh;
 
     color: var(--text-color);
 }
+
 
 .escuela
 {
@@ -54,7 +53,12 @@ body
     align-items: center;
     gap: 2rem;
 
-    padding: 2rem;
+    height: 8rem;
+}
+
+.escuela .logo img
+{
+    width: 5rem
 }
 
 .escuela .nombre-escuela{
@@ -70,7 +74,10 @@ body
 
 .escuela .button
 {   
-    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: -15px;
+
     background-color: var(--button-color);
     width: 2rem;
     height: 2rem;
@@ -80,6 +87,17 @@ body
     justify-content: center;
     align-items: center;
 
+    cursor: pointer;
+}
+
+.escuela .button-left
+{
+    display: flex;
+}
+
+.escuela .button-right
+{
+    display: none;
 }
 
 .separator
@@ -98,12 +116,13 @@ body
 
 .item
 {   
-    padding: 1rem;
-    padding-left: 2rem;
-    
+    height: 3.5rem;
+
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    padding-left: 2rem;
 }
 
 .item.active
@@ -117,6 +136,41 @@ body
     background-color: #393939;
     color: var(--text-hover-color);
     cursor: pointer;
+}
+
+.hide{
+    width: 4rem;
+}
+
+.hide .escuela .nombre-escuela{
+    display: none;
+}
+
+.hide .escuela .logo img
+{
+    width: 3rem;
+}
+
+.hide .escuela .button-left
+{
+    display: none;
+}
+
+.hide .escuela .button-right
+{
+    display: flex;
+}
+
+.hide .items .item span
+{
+    display: none;
+}
+
+.hide .items .item
+{
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .cuerpo

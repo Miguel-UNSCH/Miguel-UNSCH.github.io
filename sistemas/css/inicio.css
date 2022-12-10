@@ -266,13 +266,17 @@ body
 {
     display: flex;
     cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    overflow: hidden;
 } 
 
 .navbar .user .user-info .photo img
 {
     width: 3.5rem;
     border-radius: 50%;
-    border: 3px solid var(--button-color) ;
+    border: 3px solid var(--button-color);
 }
 
 .navbar .user .user-info .desc 

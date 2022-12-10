@@ -5,7 +5,8 @@
     --button-color: #ffc736;
     --text-hover-color: #ffc736;
     --bg-color-barra-lateral: #1E1E1E;
-    --bg-color-navbar: #313131
+    --bg-color-navbar: #313131;
+    --separator-color: #5e5a5a;
 }
 
 *
@@ -34,6 +35,8 @@ body
 
 .barra-lateral
 {
+    position: absolute;
+
     background-color: var(--bg-color-barra-lateral);
     width: 20rem;
     height: 100vh;
@@ -104,7 +107,7 @@ body
 {
     width: 100%;
     height: 2px;
-    background-color: #807474;
+    background-color: var(--separator-color);
 }
 
 .items
@@ -123,6 +126,11 @@ body
     gap: 1rem;
 
     padding-left: 2rem;
+}
+
+.item i
+{
+    font-size: 1.2rem;
 }
 
 .item.active
@@ -173,6 +181,11 @@ body
     justify-content: center;
 }
 
+.hide .items .item .docente-dsp
+{
+    display: none;
+}
+
 .cuerpo
 {
     width: 100%;
@@ -181,12 +194,140 @@ body
 .navbar
 {
     background-color: var(--bg-color-navbar);
-    height: 4rem;
-
-    color: var(--logo-text-color);
-    font-family: 'Zen Dots', cursive;
+    height: 5rem;
 
     display: flex;
+    justify-content: space-between;
+}
+
+.navbar .title
+{
+    width: 80%;
+
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.navbar .title h2
+{
+    color: var(--logo-text-color);
+    font-family: 'Zen Dots', cursive;
+    text-align: center;
+}
+
+@media (max-width: 840px)
+{
+    .navbar .title h2
+    {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 565px)
+{
+    .navbar .title h2
+    {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px)
+{
+    .navbar .title h2
+    {
+        font-size: .8rem;
+    }
+}
+
+.navbar .user
+{
+    display: flex;
     align-items: center;
 }
+
+.navbar .user .separator-column
+{
+    width: 2px;
+    height: 100%;
+    background-color: var(--separator-color);
+}
+
+.navbar .user .user-info
+{
+    margin: 0 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .user .user-info .photo
+{
+    display: flex;
+    cursor: pointer;
+} 
+
+.navbar .user .user-info .photo img
+{
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 3px solid var(--button-color) ;
+}
+
+.navbar .user .user-info .desc 
+{
+    text-align: center;
+}
+
+.navbar .user .user-info .desc .name
+{
+    color: var(--logo-text-color);
+    font-weight: 600;
+}
+
+.navbar .user .user-info .desc .rol
+{
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+@media (max-width: 1128px)
+{
+    .navbar .user .user-info .desc
+    {
+        display: none;
+    }
+}
+
+.navbar .opciones
+{
+    display: none;
+
+    background-color: var(--bg-color-navbar);
+    position: absolute;
+    top: 5.3rem;
+    right: .3rem;
+    border-radius:.5rem;
+
+    width: 13rem;
+}
+
+.navbar .opciones .item
+{
+    color: var(--button-color)
+}
+.navbar .opciones .perfil
+{
+    border-radius: .5rem .5rem 0 0;
+}
+
+.navbar .opciones .exit
+{
+    margin: .5rem 0;
+}
+
+.navbar .opciones .item:hover
+{
+    background-color: #5e5a5a;
+}
+
